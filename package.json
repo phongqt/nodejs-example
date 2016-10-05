@@ -1,9 +1,10 @@
 {
   "name": "calc-factorial",
   "version": "1.0.0",
-  "description": "",
+  "description": "Calculator factorial of a number",
   "main": "src/index.js",
   "scripts": {
+    "pretest": "eslint src",
     "test": "./node_modules/.bin/mocha --reporter spec test/index.js"
   },
   "keywords": [

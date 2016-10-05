@@ -1,11 +1,30 @@
-function factorial(num) {
-  if (isNaN(num)) {
-    return "number invalid";
+let calc = (num, done) => {
+  let total = 1;
+  for (let i = 1; i <= num; i++) {
+    total *= i;
   }
-  if (num % 10 != 0) {
-    return "number must be interger";
-  }
-  return "valid";
-}
 
-module.exports = factorial;
+  return done(total);
+};
+
+let calcFactorial = (num) => {
+  if (isNaN(num)) {
+    return 'Number invalid';
+  }
+
+  if (num % 1 !== 0) {
+    return 'Number must be an interger';
+  }
+
+  if (num <= 1) {
+    return 1;
+  }
+
+  return calc(num, (done) => {
+    return done;
+  });
+};
+
+module.exports = {
+  calcFactorial
+};
