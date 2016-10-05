@@ -2,7 +2,7 @@
 
 # This package uses to calculator factorial of number
 
-git clone https://github.com/quocbaost1890/isbn.git
+git clone https://github.com/phongqt/nodejs-example.git
 
 run `npm install` to install package
 
