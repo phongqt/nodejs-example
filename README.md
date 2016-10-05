@@ -1,1 +1,1 @@
-# nodejs-example
+# nodejs-example [![Build Status](https://travis-ci.org/phongqt/nodejs-example.svg?branch=master)](https://travis-ci.org/phongqt/nodejs-example)
